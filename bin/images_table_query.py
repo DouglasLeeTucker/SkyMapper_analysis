@@ -80,7 +80,7 @@ def images_table_query(args):
     # Save table to outputFile...
     if args.verbose>0: 
         print "File output start:      ", datetime.datetime.now()
-    images_table.to_csv(outputFile,index=False)
+    images_table.write(outputFile)
     if args.verbose>0: 
         print "File output completed:  ", datetime.datetime.now()
 

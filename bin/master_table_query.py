@@ -20,6 +20,8 @@ def main():
     """Create command line arguments"""
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--outputFile', help='name of an output file', default='output.csv')
+    parser.add_argument('--object_id_lo', help='smallest object_id to consider', default=0, type=long)
+    parser.add_argument('--object_id_hi', help='largest object_id to consider', default=499999, type=long)
     parser.add_argument('--verbose', help='verbosity level of output to screen (0,1,2,...)', default=0, type=int)
     args = parser.parse_args()
 

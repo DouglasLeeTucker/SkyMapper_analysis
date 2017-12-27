@@ -54,7 +54,7 @@ def nobs_fs_table_query(args):
     outputFile=args.outputFile
     
     # Establish TAP connection to SkyMapper database...
-    skyskymapper = TapPlus(url="http://skymappertap.asvo.nci.org.au/ncitap/tap")
+    skymapper = TapPlus(url="http://skymappertap.asvo.nci.org.au/ncitap/tap")
 
     # Formulate the query...
     query = """SELECT image_id, count(*) as nobj FROM dr1.fs_photometry group by image_id"""

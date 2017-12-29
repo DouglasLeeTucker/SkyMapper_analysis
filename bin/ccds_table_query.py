@@ -77,7 +77,7 @@ def ccds_table_query(args):
         print "Retrieval completed:  ", datetime.datetime.now()
 
     # Sort table by image_id
-    ccds_table.sort('object_id')
+    ccds_table.sort('image_id')
 
     # Save table to outputFile...
     if args.verbose>0: 
